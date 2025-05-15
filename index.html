@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fudbalski Manager</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* Header Section */
+    .header {
+      padding: 80px 0;
+      text-align: center;
+      background-color: #1a1a1a;
+      color: white;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 60px;
+      font-weight: bold;
+    }
+    .header p {
+      font-size: 22px;
+      margin-top: 10px;
+      font-style: italic;
+    }
+
+    /* Navigation Menu */
+    .navigacija {
+      background-color: #333;
+      padding: 15px 0;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .navigacija ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .navigacija li {
+      display: inline-block;
+    }
+    .navigacija a {
+      color: #fff;
+      text-decoration: none;
+      padding: 0 30px;
+      line-height: 40px;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+    .navigacija a:hover {
+      color: #00bfff;
+    }
+
+    /* Section Styles */
+    .section {
+      display: none;
+      padding: 50px 20px;
+      margin: 0 auto;
+      max-width: 900px;
+      background-color: #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      margin-top: 20px;
+      transition: transform 0.3s ease-in-out;
+    }
+    .section h2 {
+      font-size: 36px;
+      color: #333;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .section p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #666;
+    }
+    .section ul {
+      font-size: 18px;
+      color: #666;
+    }
+    .active {
+      display: block;
+      animation: fadeIn 0.6s ease-in-out;
+    }
+
+    /* Animation */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #1a1a1a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    .footer p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    /* Slika stilovi */
+    .section img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Fudbalski Manager</h1>
+    <p>Menadžment fudbalskih talenata širom sveta</p>
+  </div>
+
+  <nav class="navigacija">
+    <ul>
+      <li><a href="javascript:void(0);" onclick="showSection('home')">Početna</a></li>
+      <li><a href="javascript:void(0);" onclick="showSection('about')">O nama</a></li>
+      <li><a href="javascript:void(0);" onclick="showSection('services')">Usluge</a></li>
+      <li><a href="javascript:void(0);" onclick="showSection('contact')">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <div class="section" id="home">
+    <h2>Početna</h2>
+    <p>Dobrodošli na zvaničnu stranicu Fudbal Management-a. Naša agencija nudi vrhunske usluge menadžmenta fudbalskih talenata i pomoć u izgradnji karijera na međunarodnom nivou. Mi smo tim iskusnih profesionalaca posvećenih svakom klijentu. Naš cilj je osigurati da svaki igrač postigne svoje najveće mogućnosti u profesionalnom fudbalu. ⚽</p>
+  </div>
+
+  <!-- About Section -->
+  <div class="section" id="about">
+    <h2>O nama</h2>
+    <p>Fudbal Management je vodeća agencija koja se specijalizovala za zastupanje profesionalnih fudbalskih talenata. Naš tim se sastoji od iskusnih agenata, pravnika i PR stručnjaka koji rade zajedno kako bi svakom klijentu omogućili da dostigne vrhunac svoje karijere. Sa globalnim iskustvom i uspehom, postavljamo nove standarde u svetu menadžmenta fudbalskih zvezda. 🌍</p>
+    <p>Naša misija je jednostavna: pružiti personalizovanu uslugu i podršku kako bi naši klijenti ostvarili vrhunske ugovore i postali poznati brendovi na globalnom nivou. 💼</p>
+  </div>
+
+  <!-- Services Section -->
+  <div class="section" id="services">
+    <h2>Usluge</h2>
+    <p>Fudbal Management nudi sveobuhvatan pristup u menadžmentu fudbalskih igrača: ⚽</p>
+    <ul>
+      <li><strong>Pregovaranje i produženje ugovora:</strong> Efikasno pregovaramo sa klubovima kako bismo osigurali najbolji mogući ugovor. 🤝</li>
+      <li><strong>Organizacija transfera:</strong> Pomoć pri organizaciji transfera, sa naglaskom na najbolje finansijske i profesionalne uslove. 💰</li>
+      <li><strong>PR i brendiranje:</strong> Gradimo imidž igrača i kreiramo strategije za društvene mreže, medijske nastupe i promociju. 📱</li>
+      <li><strong>Pravno savetovanje:</strong> Pravni tim pruža pomoć u vezi sa svim ugovorima, licencama i pravnim pitanjima. ⚖️</li>
+      <li><strong>Finansijsko planiranje:</strong> Pomažemo igračima u organizaciji ličnih finansija, investiranja i poreznih pitanja. 💸</li>
+    </ul>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="section" id="contact">
+    <h2>📞 Kontakt</h2>
+    <p>Za više informacija ili da se konsultujete sa našim timom, možete nas kontaktirati putem sledećih kanala:</p>
+    <p>📧 Email: <a href="mailto:kontakt@fudbalmgmt.com">kontakt@fudbalmgmt.com</a><br>
+       📱 Telefon: +381 60 123 4567<br>
+       📍 Lokacija: Beograd, Srbija</p>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 Fudbal Management. Sva prava zadržana.</p>
+  </div>
+
+  <script>
+    function showSection(sectionId) {
+      // Sakriva sve sekcije
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(section => {
+        section.classList.remove('active');
+      });
+
+      // Prikazuje selektovanu sekciju
+      const activeSection = document.getElementById(sectionId);
+      if (activeSection) {
+        activeSection.classList.add('active');
+      }
+    }
+
+    // Prikazuje početnu sekciju kada se stranica učita
+    window.onload = function() {
+      showSection('home');
+    }
+  </script>
+
+</body>
+</html>
